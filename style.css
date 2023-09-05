@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+
+html, body{
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: blueviolet;
+}
+
+.container{
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 5px;
+}
+.container header{
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+}
+.container form{
+  margin: 35px 0 20px;
+}
+form .row{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+form .row label{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form :where(textarea, select, button) {
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}  
+form .row textarea{
+  border: 1px solid rgb(153, 151, 155);
+  resize: none;
+  height: 110px;
+  font-size: 15px;
+  padding: 10px;
+}
+form .row textarea::-webkit-scrollbar{
+  width: 5px;
+}
+form .row textarea::-webkit-scrollbar-thumb{
+  background: blueviolet;
+  border-radius: 10px;
+}
+form .row .outer{
+  border: 1px solid rgb(153, 151, 155);
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  height: 47px;
+}
+form .row select{
+  font-size: 14px;
+}
+form button{
+  background-color: blueviolet;
+  padding: 8px 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
